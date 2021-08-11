@@ -74,6 +74,13 @@ public class Player : MonoBehaviour
     void Start()
     {
         camOffset =  playerCamera.transform.position - body.transform.position;
+
+        Quaternion originalRotCamera = playerCamera.transform.rotation;
+        Quaternion originalRotBody = body.transform.rotation;
+        Rotate();
+        playerCamera.transform.rotation = originalRotCamera;
+        body.transform.rotation = originalRotBody;
+
     }
 
     // Update is called once per frame
