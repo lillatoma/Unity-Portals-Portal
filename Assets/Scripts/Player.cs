@@ -25,13 +25,9 @@ public class Player : MonoBehaviour
         //Based on our input, we calculate the direction vector
         //Then rotate it with the rotation of our body
 
-        Vector2 relativeDirectionVector = new Vector2(hori, vert);
-        float angle = UseTools.RealVector2Angle(relativeDirectionVector) - body.transform.rotation.eulerAngles.y * Mathf.Deg2Rad;
-
-
-
-        body.GetComponent<Rigidbody>().velocity = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * moveSpeed;
-
+        Vector2 relativeDirectionVector = new Vector2(vert, hori);
+        float angle = Mathf.Rad2Deg * UseTools.RealVector2Angle(relativeDirectionVector); 
+        body.GetComponent<Rigidbody>().velocity = Quaternion.AngleAxis( angle, Vector3.up) * body.transform.forward * moveSpeed;
     }
 
     void ClampCameraAngles()
@@ -65,11 +61,6 @@ public class Player : MonoBehaviour
         playerCamera.transform.rotation = Quaternion.Euler(curRotofCamera.eulerAngles + new Vector3(-mouseY,mouseX,0)*mouseSensitivity);
         Quaternion curRotofBody = body.transform.rotation;
         body.transform.rotation = Quaternion.Euler(curRotofBody.eulerAngles + new Vector3(0, mouseX, 0) * mouseSensitivity);
-
-
-
-        Debug.Log("X: " + playerCamera.transform.rotation.eulerAngles.x);
-
 
     }
 
