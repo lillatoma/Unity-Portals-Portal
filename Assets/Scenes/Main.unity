@@ -271,6 +271,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 758551517472888351, guid: cc5523b5ba61c4645b29ee25a4f4d521, type: 3}
   m_PrefabInstance: {fileID: 194826813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263385374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7721072221070830601, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+  m_PrefabInstance: {fileID: 1740357419}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &285516167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1576,7 +1581,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.1
+  near clip plane: 0.3
   far clip plane: 1000
   field of view: 90
   orthographic: 0
@@ -1830,6 +1835,78 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1126690129}
     m_Modifications:
+    - target: {fileID: 43566861056180159, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: localPortal
+      value: 
+      objectReference: {fileID: 263385374}
+    - target: {fileID: 43566861056180159, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 6943679460198726979}
+    - target: {fileID: 43566861056180159, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1351058021}
+    - target: {fileID: 810216862230770744, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: endPortal
+      value: 
+      objectReference: {fileID: 6943679460198726979}
+    - target: {fileID: 814161667555764336, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db10205213961574fb465adc86468a28, type: 2}
+    - target: {fileID: 3066279888759568314, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 3066279888759568314, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963811233067638137, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 3963811233067638137, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486025727438097093, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 60b0b43ae924ee84c866a815cac11909, type: 2}
+    - target: {fileID: 4486025727438097093, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711801843971791843, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5711801843971791843, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939747540140553800, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db10205213961574fb465adc86468a28, type: 2}
+    - target: {fileID: 6943679460273768229, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679460273768229, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943679461113165183, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679461113165183, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6943679461551963888, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1875,9 +1952,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6943679461551963891, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679461551963891, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
       propertyPath: m_Name
       value: PortalGateForest
       objectReference: {fileID: 0}
+    - target: {fileID: 6943679461551963891, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943679461714546959, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679461714546959, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721072221070830601, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7721072221070830601, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235241118056881109, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db10205213961574fb465adc86468a28, type: 2}
     - target: {fileID: 8428978414609908132, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
       propertyPath: endPortal
       value: 
@@ -2123,6 +2228,78 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1126690129}
     m_Modifications:
+    - target: {fileID: 43566861056180159, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: localPortal
+      value: 
+      objectReference: {fileID: 6943679460198726979}
+    - target: {fileID: 43566861056180159, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: otherPortal
+      value: 
+      objectReference: {fileID: 263385374}
+    - target: {fileID: 43566861056180159, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1351058021}
+    - target: {fileID: 810216862230770744, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: endPortal
+      value: 
+      objectReference: {fileID: 263385374}
+    - target: {fileID: 814161667555764336, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49b9fb2e62785414793ca80d932ae35a, type: 2}
+    - target: {fileID: 3066279888759568314, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 3066279888759568314, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3963811233067638137, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 3963811233067638137, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486025727438097093, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_TargetTexture
+      value: 
+      objectReference: {fileID: 8400000, guid: 77f026391091b7c4c8cd1ec2a8225beb, type: 2}
+    - target: {fileID: 4486025727438097093, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5711801843971791843, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5711801843971791843, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6939747540140553800, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49b9fb2e62785414793ca80d932ae35a, type: 2}
+    - target: {fileID: 6943679460273768229, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679460273768229, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943679461113165183, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679461113165183, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6943679461551963888, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2168,12 +2345,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6943679461551963891, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679461551963891, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
       propertyPath: m_Name
       value: PortalGateSand
       objectReference: {fileID: 0}
+    - target: {fileID: 6943679461551963891, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6943679461714546959, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 6943679461714546959, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721072221070830601, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 7721072221070830601, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235241118056881109, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49b9fb2e62785414793ca80d932ae35a, type: 2}
     - target: {fileID: 8428978414609908132, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
       propertyPath: endPortal
       value: 
       objectReference: {fileID: 1740357421}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+--- !u!1 &6943679460198726979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7721072221070830601, guid: c0ebfc8b9f9c2424d91b2a7639ed1a92, type: 3}
+  m_PrefabInstance: {fileID: 6943679460198726978}
+  m_PrefabAsset: {fileID: 0}
