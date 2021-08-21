@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
     public float mouseSensitivity;
 
     private Vector3 camOffset;
-
+    /// <summary>
+    /// This function takes care of WASD input and the movement of the player's body
+    /// </summary>
     void Move()
     {
         float vert = Input.GetAxis("Vertical");
@@ -32,13 +34,11 @@ public class Player : MonoBehaviour
 
     void ClampCameraAngles()
     {
-        //if (playerCamera.transform.rotation.eulerAngles.x < -90)
-        //    playerCamera.transform.rotation = Quaternion.Euler(playerCamera.transform.rotation.eulerAngles - new Vector3(90f + playerCamera.transform.rotation.eulerAngles.x, 0, 0));
-        //else if (playerCamera.transform.rotation.eulerAngles.x < 270 && playerCamera.transform.rotation.eulerAngles.x > 180)
-        //    playerCamera.transform.rotation = Quaternion.Euler(playerCamera.transform.rotation.eulerAngles - new Vector3(-90f + playerCamera.transform.rotation.eulerAngles.x, 0, 0));
         playerCamera.transform.rotation = Quaternion.Euler(playerCamera.transform.rotation.eulerAngles.x, playerCamera.transform.rotation.eulerAngles.y, 0);
     }
-
+    /// <summary>
+    /// This function takes care of mouse movement, and the rotation of the player's camera and body
+    /// </summary>
     void Rotate()
     {
         ClampCameraAngles();
@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
+        //When the mouse hasn't been moved
         if (mouseX == 0 && mouseY == 0)
             return;
 
@@ -53,28 +54,33 @@ public class Player : MonoBehaviour
 
         Quaternion curRotofCamera = playerCamera.transform.rotation;
 
+        //If the mouse goes too high, or too low, this is suppsoed to block it
         if (-mouseY / mouseSensitivity + curRotofCamera.eulerAngles.x < -90f 
             || (-mouseY / mouseSensitivity + curRotofCamera.eulerAngles.x > 180f
             && -mouseY / mouseSensitivity + curRotofCamera.eulerAngles.x < 270f))
             mouseY = 0;
 
+        //We rotate the playercamera and body scaled by the mousesensitivity
         playerCamera.transform.rotation = Quaternion.Euler(curRotofCamera.eulerAngles + new Vector3(-mouseY,mouseX,0)*mouseSensitivity);
         Quaternion curRotofBody = body.transform.rotation;
         body.transform.rotation = Quaternion.Euler(curRotofBody.eulerAngles + new Vector3(0, mouseX, 0) * mouseSensitivity);
 
     }
-
+    /// <summary>
+    /// This function sets the camera's position accoring to the bodys position
+    /// </summary>
     void UpdateCamera()
     {
         playerCamera.transform.position = body.transform.position + camOffset;
     }
 
 
-    // Start is called before the first frame update
     void Start()
     {
         camOffset =  playerCamera.transform.position - body.transform.position;
 
+        //Calling the Rotate() function but reverting it's effect, because on app-start,
+        //The odd positioning of the mouse would rotate the player's camera
         Quaternion originalRotCamera = playerCamera.transform.rotation;
         Quaternion originalRotBody = body.transform.rotation;
         Rotate();
